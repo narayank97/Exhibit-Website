@@ -1,0 +1,839 @@
+
+body {
+    min-height: 100vh;  /* needed to make sure body fills up window */
+}
+div.header{
+	display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap-reverse; */
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2%;
+    /* background-color: rebeccapurple; */
+}
+div.leftHeader{
+    font-family: montserrat, sans-serif; font-weight: 350; font-style: normal;
+    padding-left: 10%;
+    justify-content: flex-start;
+    font-size: 1.5vw;
+}
+.leftHeader p{
+    color:blue;
+}
+.leftHeader b{
+    color:rgb(201,82,61);
+}
+div.rightHeader{
+    font-family: helvetica, sans-serif; font-weight: 300; font-style: normal;
+    padding-right: 10%;
+    justify-content: flex-end;
+}
+.rightHeader b{
+    color: white;
+}
+
+div.title{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(249,172,120);
+}
+div.titleWords{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: left; */
+    /* flex-basis: 700px; set default width */
+    padding-right: 10%;
+    color: white;
+    text-align: right;
+}
+
+
+div.Pic{
+    padding-left: 10%;
+}
+div.top{
+    font-family: helvetica, sans-serif; font-weight: 900; font-style: bolder;
+    /* font-size: 2.5vw; */
+    line-height: 7%;
+}
+.titleWords h1{
+    font-family: helvetica, sans-serif; font-weight: 900; font-style: normal;
+    font-size: 6vw;
+}
+.titleWords h4{
+    font-family: helvetica, sans-serif; font-weight: 200; font-style: normal;
+    font-size: 3.8vw;
+}
+.Pic img{
+    /* justify-content: flex-start; */
+    max-width: 26vw;
+
+}
+
+div.firstContent{
+	display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    /* background-color:blue; */
+}
+.firstContent h2{
+    font-family: montserrat, sans-serif; font-weight: 1200; font-style: normal;
+    color:rgb(201,82,61);
+}
+.firstContent h3{
+    font-family: montserrat, sans-serif; font-weight: 500; font-style: normal;
+    color:rgb(201,82,61);
+}
+.firstContent p{
+    font-family: helvetica, sans-serif; font-weight: 200; font-style: normal;
+}
+div.leftWords{
+    flex-grow: 0; 
+    flex-shrink: 1;
+    flex-basis: 500px; /* set default width */
+    padding-left: 10%;
+}
+
+div.Pic2{
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 0%;
+}
+.Pic2 img{
+    /* justify-content: flex-start; */
+    flex-basis: auto;  
+    max-height: 25vw;
+    padding-left: 2%;
+
+}
+#more{
+    display: flex;
+}
+
+div.secondContent{
+    font-family: helvetica, sans-serif; font-weight: 200; font-style: normal;
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* flex-wrap: wrap-reverse; */
+    align-items: center;
+}
+div.rightWords{
+    padding-top: 0%;
+    flex-grow: 0; 
+    flex-shrink: 1;
+    flex-basis: 650px;
+    padding-left: 5%;
+    padding-right: 20%;
+}
+div.readLessBtn{
+    padding-left: 4%;
+}
+#readMore{
+    visibility: hidden;
+}
+.readLessBtn button{
+    background-color: white;
+    border: none;
+    color:rgb(201,82,61);
+    text-align: left;
+    font-size: 24px;
+    cursor: pointer;
+    visibility: hidden;
+  }
+div.leftImage{
+    padding-left: 10%;
+}
+.leftImage img{
+    max-height: 400px;
+    background-color: aqua;
+}
+div.footer{
+    padding-top: 3%;
+    font-family: montserrat, sans-serif; font-weight: 500; font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    /* align-items: c; */
+    background-color: rgb(249,172,120);
+    padding-bottom: 5%;
+}
+div.leftSide{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-basis: 250px; /* set default width */
+    padding-left: 10%;
+    color:rgb(201,82,61);
+    line-height: 100%;
+
+}
+div.rightSide{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    /* flex-wrap: wrap; */
+    align-items: flex-start;
+    flex-basis: 400px; /* set default width */
+    padding-left: 17%;
+    color:rgb(173, 69, 53);
+    line-height: 100%;
+}
+.footer b{
+    /* font-family: montserrat, sans-serif; font-weight: 900; font-style: bolder; */
+    color:rgb(173, 69, 53);
+    font-style: bold;
+}
+.footer h3{
+    font-family: montserrat, sans-serif; font-weight: 900; font-style: bold;
+    color:rgb(173, 69, 53);
+    font-style: bold;
+}
+.leftSide p{
+    /* font-family: montserrat, sans-serif; font-weight: 900; font-style: bold; */
+    line-height: 0%;
+    font-size:17px;
+}
+.rightSide p{
+    font-family: montserrat, sans-serif; font-weight: 500; font-style: normal;
+    line-height: 100%;
+    color:rgb(201,82,61);
+    font-size:17px;
+}
+
+@media screen and (max-width: 500px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    div.header{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    div.leftHeader{
+        font-family: montserrat, sans-serif; font-weight: 350; font-style: normal;
+        padding-left: 0%;
+        /* justify-content: flex-start; */
+    }
+    .leftHeader p{
+        color:blue;
+    }
+    .leftHeader b{
+        color:rgb(201,82,61);
+    }
+    div.rightHeader{
+        font-family: helvetica, sans-serif; font-weight: 400; font-style: normal;
+        padding-right: 0%;
+        /* justify-content: flex-end; */
+    }
+    .rightHeader p{
+        font-size: 24px;
+    }
+    .rightHeader b{
+        color: white;
+    }
+    div.title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    div.titleWords{
+        /* display: flex;
+        flex-direction: column;
+         */
+        /* justify-content: left; */
+        /* flex-basis: 700px; set default width */
+        padding-right: 0%;
+        color: white;
+        text-align: center;
+    }
+    div.top{
+        font-family: helvetica, sans-serif; font-weight: 900; font-style: bolder;
+        line-height: 7%;
+    }
+    .titleWords h1{
+        font-family: helvetica, sans-serif; font-weight: 900; font-style: normal;
+        font-size: 10vw;
+    }
+    .titleWords h4{
+        font-family: helvetica, sans-serif; font-weight: 200; font-style: normal;
+        font-size: 6.25vw;
+    }
+    div.Pic{
+        padding-left: 0%;
+    }
+    .Pic img{
+        /* justify-content: flex-start; */
+        max-width: 100%;
+    
+    }
+    div.firstContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0%;
+        padding-right: 5%;
+
+    }
+    .firstContent p{
+        font-family: helvetica, sans-serif; font-weight: 300; font-style: normal;
+        line-height: 150%;
+        font-size: 4.5vw;
+        text-align: left;
+    }
+    div.Pic2{
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .Pic2 img{
+        /* justify-content: flex-start; */
+        /* flex-basis: auto;  resize with viewport width  */
+        width: 90vw;
+        max-height: 100%;
+    
+    }
+    div.secondContent{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        /* padding-right: 5%; */
+    }
+    div.rightWords{
+
+        flex-grow: 0; 
+        flex-shrink: 1;
+        flex-basis: 650px; /* set default width */
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+    .rightBottom p{
+        font-family: helvetica, sans-serif; font-weight: 300; font-style: normal;
+        line-height: 150%;
+        font-size: 4.5vw;
+        text-align: left;
+    }
+    .readLessBtn button{
+        background-color: white;
+        border: none;
+        color:rgb(201,82,61);
+        text-align: left;
+        font-size: 5vw;
+        cursor: pointer;
+        padding-left: 7%;
+        padding-bottom: 10%;
+        min-width: 100px;
+      }
+      div.leftImage{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 8%;
+    }
+      .leftImage img{
+        max-height: 100%;
+        width: 100%;
+        background-color: white;
+    }
+    div.footer{
+        display: flex;
+        flex-direction: column;
+    }
+    div.leftSide{
+        justify-content: center;
+        /* justify-content: flex-start;
+        align-items: flex-start; */
+        /* flex-basis: 10vw; */
+        padding-left: 10%;
+        color:rgb(201,82,61);
+        line-height: 100%;
+    
+    }
+    div.rightSide{
+        font-family: montserrat, sans-serif; font-weight: 900; font-style: bold;
+        /* flex-basis: 11vw; */
+        padding-left: 10%;
+        color:rgb(201,82,61);
+        line-height: 100%;
+        padding-bottom: 5%;
+    }
+    .footer b{
+        /* font-family: montserrat, sans-serif; font-weight: 900; font-style: bolder; */
+        color:rgb(173, 69, 53);
+        font-style: bold;
+        line-height: 100%;
+        
+    }
+    .footer h3{
+        font-family: montserrat, sans-serif; font-weight: 900; font-style: bold;
+        color:rgb(173, 69, 53);
+        font-style: bold;
+    }
+    .leftSide p{
+        /* font-family: montserrat, sans-serif; font-weight: 900; font-style: bold; */
+        line-height: 100%;
+        font-size:17px;
+    }
+    .rightSide p{
+        font-family: montserrat, sans-serif; font-weight: 500; font-style: normal;
+        line-height: 100%;
+        color:rgb(201,82,61);
+        font-size:17px;
+    }
+
+  }
+
+ 
+  @media screen and (max-width: 790px) {
+      
+    body {
+        min-height: 100vh;  /* needed to make sure body fills up window */
+    }
+    div.header{
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap-reverse; */
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 2%;
+        /* background-color: rebeccapurple; */
+    }
+    div.leftHeader{
+        font-family: montserrat, sans-serif; font-weight: 350; font-style: normal;
+        padding-left: 5%;
+        justify-content: flex-start;
+        font-size: 2vw;
+    }
+    .leftHeader p{
+        color:blue;
+    }
+    .leftHeader b{
+        color:rgb(201,82,61);
+    }
+    div.rightHeader{
+        font-family: helvetica, sans-serif; font-weight: 300; font-style: normal;
+        padding-right: 10%;
+        justify-content: flex-end;
+        font-size: 2vw;
+    }
+    .rightHeader b{
+        color: white;
+    }
+
+    div.title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(249,172,120);
+    }
+    div.titleWords{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: left; */
+        /* flex-basis: 700px; set default width */
+        padding-right: 10%;
+        color: white;
+        text-align: right;
+    }
+
+
+    div.Pic{
+        padding-left: 00%;
+    }
+    div.top{
+        font-family: helvetica, sans-serif; font-weight: 900; font-style: bolder;
+        /* font-size: 2.5vw; */
+        line-height: 7%;
+    }
+    .titleWords h1{
+        font-family: helvetica, sans-serif; font-weight: 900; font-style: normal;
+        font-size: 6vw;
+    }
+    .titleWords h4{
+        font-family: helvetica, sans-serif; font-weight: 200; font-style: normal;
+        font-size: 3.8vw;
+    }
+    .Pic img{
+        /* justify-content: flex-start; */
+        /* max-width: 26vw; */
+        min-width: 160%;
+    }
+
+    div.firstContent{
+        display: block;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        /* background-color:blue; */
+    }
+    .firstContent h2{
+        font-family: montserrat, sans-serif; font-weight: 1200; font-style: normal;
+        color:rgb(201,82,61);
+        flex-basis: 650px;
+    }
+    .firstContent h3{
+        font-family: montserrat, sans-serif; font-weight: 500; font-style: normal;
+        color:rgb(201,82,61);
+    }
+    .firstContent p{
+        font-family: helvetica, sans-serif; font-weight: 200; font-style: normal;
+    }
+    div.leftWords{
+        flex-grow: 0; 
+        flex-shrink: 1;
+
+        /* flex-basis: 500px; set default width */
+        padding-left: 5%;
+        margin-right: 8%;
+    }
+
+    div.Pic2{
+        float: right;
+        padding-right: 10%;
+        padding-top: 2%;
+        padding-bottom: 0%;
+        padding-left: 5%;
+    }
+    .Pic2 img{
+        /* justify-content: flex-start; */
+
+        float: right;
+        /* flex-basis: auto;   */
+        max-height: 25vw;
+        padding-left: 2%;
+
+    }
+
+    #pic2{
+        display: flex;
+    }
+
+    #readMore{
+        visibility: visible;
+    }
+    #more{
+        display: none;
+    }
+
+    div.secondContent{
+        font-family: helvetica, sans-serif; font-weight: 200; font-style: normal;
+        display: block;
+        flex-direction: row;
+        justify-content: flex-start;
+        /* flex-wrap: wrap-reverse; */
+        align-items: center;
+    }
+    div.rightWords{
+        padding-top: 0%;
+        flex-grow: 0; 
+        flex-shrink: 1;
+        flex-basis: 650px;
+        padding-left: 5%;
+        padding-right: 6%;
+    }
+    #readMore{
+        padding-left: 4%;
+        padding-bottom: 4%;
+    }
+    #readMore button{
+        background-color: white;
+        border: none;
+        color:rgb(201,82,61);
+        text-align: left;
+        font-size: 24px;
+        cursor: pointer;
+        visibility: visible;
+    }
+    div.leftImage{
+        float: left;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .leftImage img{
+        float: left;
+        max-height: 400px;
+        background-color: aqua;
+    }
+    div.footer{
+        /* padding-top: 3%; */
+        font-family: montserrat, sans-serif; font-weight: 500; font-style: normal;
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: flex-start;
+        /* flex-wrap: wrap; */
+        /* align-items: c; */
+        background-color: rgb(249,172,120);
+        /* padding-bottom: 5%; */
+    }
+    div.leftSide{
+         /* display: flex; */
+         flex: 1;
+        /*flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* justify-content: flex-start; */
+        /* align-items: flex-start; */
+        /* flex-basis: 250px; */
+        /* padding-left: 10%; */
+        color:rgb(201,82,61);
+        line-height: 100%;
+
+    }
+    div.rightSide{
+        /* /* display: flex; */
+        flex: 2;
+        /* flex-direction: column;  */
+        /* justify-content: flex-start; */
+        /* flex-wrap: wrap; */
+        /* align-items: flex-start; */
+        /* flex-basis: 400px;  */
+        /* margin-left: 10%; */
+        color:rgb(173, 69, 53);
+        line-height: 100%;
+    }
+    .footer b{
+        /* font-family: montserrat, sans-serif; font-weight: 900; font-style: bolder; */
+        color:rgb(173, 69, 53);
+        font-style: bold;
+    }
+    .footer h3{
+        font-family: montserrat, sans-serif; font-weight: 900; font-style: bold;
+        color:rgb(173, 69, 53);
+        font-style: bold;
+    }
+    .leftSide p{
+        /* font-family: montserrat, sans-serif; font-weight: 900; font-style: bold; */
+        /* line-height: 0%; */
+        font-size:2vw;
+    }
+    .rightSide p{
+        font-family: montserrat, sans-serif; font-weight: 500; font-style: normal;
+        /* line-height: 0%; */
+        color:rgb(201,82,61);
+        font-size:2vw;
+    }
+  
+
+  }
+   @media screen and (max-width: 500px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    div.header{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    div.leftHeader{
+        font-family: montserrat, sans-serif; font-weight: 350; font-style: normal;
+        padding-left: 0%;
+        
+        /* justify-content: flex-start; */
+        font-size: 3.4vw;
+    }
+    .leftHeader p{
+        color:blue;
+    }
+    .leftHeader b{
+        color:rgb(201,82,61);
+    }
+    div.rightHeader{
+        font-family: helvetica, sans-serif; font-weight: 400; font-style: normal;
+        padding-right: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
+        /* justify-content: flex-end; */
+    }
+    .rightHeader p{
+        font-size: 6vw;
+    }
+    .rightHeader b{
+        color: white;
+    }
+    div.title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    div.titleWords{
+        /* display: flex;
+        flex-direction: column;
+         */
+        /* justify-content: left; */
+        /* flex-basis: 700px; set default width */
+        padding-right: 0%;
+        color: white;
+        text-align: center;
+    }
+    div.top{
+        font-family: helvetica, sans-serif; font-weight: 900; font-style: bolder;
+        line-height: 7%;
+    }
+    .titleWords h1{
+        font-family: helvetica, sans-serif; font-weight: 900; font-style: normal;
+        font-size: 10vw;
+    }
+    .titleWords h4{
+        font-family: helvetica, sans-serif; font-weight: 200; font-style: normal;
+        font-size: 6.25vw;
+    }
+    div.Pic{
+        padding-left: 0%;
+    }
+    .Pic img{
+        /* justify-content: flex-start; */
+        /* width: 40vw; */
+        padding-left: 0%;
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%
+    
+    }
+    div.firstContent{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+    div.leftWords{
+        padding-left: 10%;
+        padding-right: 0%;
+    }
+    .firstContent p{
+        font-family: helvetica, sans-serif; font-weight: 300; font-style: normal;
+        line-height: 150%;
+        font-size: 4.5vw;
+        text-align: left;
+    }
+    div.Pic2{
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .Pic2 img{
+        /* justify-content: flex-start; */
+        /* flex-basis: auto;  resize with viewport width  */
+        width: 90vw;
+        max-height: 100%;
+    
+    }
+    #pic2{
+        display:inline;
+    }
+    #readMore{
+        visibility: visible;
+    }
+    #more{
+        display: none;
+    }
+
+    div.secondContent{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        /* padding-right: 5%; */
+    }
+    div.rightWords{
+
+        flex-grow: 0; 
+        flex-shrink: 1;
+        flex-basis: 650px; /* set default width */
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+    .rightBottom p{
+        font-family: helvetica, sans-serif; font-weight: 300; font-style: normal;
+        line-height: 150%;
+        font-size: 4.5vw;
+        text-align: left;
+    }
+    #readMore{
+        padding-left: 4%;
+        padding-bottom: 4%;
+    }
+    #readMore button{
+        background-color: white;
+        border: none;
+        color:rgb(201,82,61);
+        text-align: left;
+        font-size: 5vw;
+        cursor: pointer;
+        padding-left: 7%;
+        padding-bottom: 10%;
+        min-width: 100px;
+        visibility: visible;
+    }
+    
+      div.leftImage{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 8%;
+    }
+      .leftImage img{
+        max-height: 100%;
+        width: 100%;
+        background-color: white;
+    }
+    div.footer{
+        display: flex;
+        flex-direction: column;
+    }
+    div.leftSide{
+        justify-content: center;
+        /* justify-content: flex-start;
+        align-items: flex-start; */
+        flex-basis: 10vw;
+        padding-left: 10%;
+        color:rgb(201,82,61);
+        line-height: 0%;
+    
+    }
+    div.rightSide{
+        font-family: montserrat, sans-serif; font-weight: 900; font-style: bold;
+        flex-basis: 11vw;
+        padding-left: 10%;
+        color:rgb(201,82,61);
+        line-height: 100%;
+        padding-bottom: 5%;
+    }
+    .footer b{
+        /* font-family: montserrat, sans-serif; font-weight: 900; font-style: bolder; */
+        color:rgb(173, 69, 53);
+        font-style: bold;
+    }
+    .footer h3{
+        font-family: montserrat, sans-serif; font-weight: 900; font-style: bold;
+        color:rgb(173, 69, 53);
+        font-style: bold;
+    }
+    .leftSide p{
+        /* font-family: montserrat, sans-serif; font-weight: 900; font-style: bold; */
+        line-height: 0%;
+        font-size:17px;
+    }
+    .rightSide p{
+        font-family: montserrat, sans-serif; font-weight: 500; font-style: normal;
+        line-height: 100%;
+        color:rgb(201,82,61);
+        font-size:17px;
+    }
+
+  }
+
+main {
+}
+
